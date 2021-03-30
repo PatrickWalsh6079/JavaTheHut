@@ -27,7 +27,7 @@ public class SQLInjection {
 		Scanner scannerIn = new Scanner(System.in);
 		/*
 		 * using the parameterized query uses REPLACE() functions inside the SQL query
-		 *  to eliminate single quotes ''
+		 *  to eliminate single quotes '' which prevents an SQL injection attack.
 		 */
 	    System.out.println("Use a parameterized query? (y or n): ");
 	    String parameterized = scannerIn.nextLine();  // the nextLine() method scans the next string value
